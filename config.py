@@ -8,7 +8,7 @@ class Config(object):
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'TimsZoo'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'Timibreez'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Adegbe01'
-    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=ODBC+Driver+17+for+SQL+Server'
+    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'timszoo'
