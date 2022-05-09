@@ -11,6 +11,6 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'timibreez01'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'SPa4dZYZsS5z5Pl4+l3bVyktqddwRnpcpGT0HVW9UnajxxcFlS8ORS5pf00GDpJDCcu9z5Jlz1hI+9AEuZ91Zw=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'timszoo'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'MtoRPV9z2U2lgCUbqSUXI3H4g8t0IeYWJqKiEiaPkz0ZnrRImkpOzyIEE9tPR1FOFIypx5avJxad9lHbecf1Jg=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
